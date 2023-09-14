@@ -5,13 +5,12 @@ import PageNotFound from "./Routes/PageNotFound";
 import { routes } from "./utils/routes";
 import Detail from "./Routes/Detail";
 import LayoutWhite from "./Layout/LayoutWhite";
-import LayoutBlack from "./Layout/LayoutBlack";
+import LayoutBlack from "./Layout/LayoutPink";
 import Favs from "./Routes/Favs";
 import Form from "./Components/Form";
 import { usecontextGlobal } from "./Components/utils/GlobalContext";
 
 function App() {
-  // const dentistState = {dentistTheme:true}
   const { dentistState } = usecontextGlobal();
   const change = dentistState.dentistTheme;
   return (

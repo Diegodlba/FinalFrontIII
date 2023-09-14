@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+main h1{
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.main div {
+    gap: 2rem;
+}

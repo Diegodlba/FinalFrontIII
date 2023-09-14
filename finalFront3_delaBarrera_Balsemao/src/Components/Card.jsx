@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import  "../styles/card.css"
 import { usecontextGlobal } from "../Components/utils/GlobalContext";
 
 const Card = ({ dentist }) => {
@@ -20,7 +20,7 @@ const Card = ({ dentist }) => {
   };
 
   return (
-    <div>
+    <div className="card">
       <Link
         key={dentist.id}
         to={"/detalle/" + dentist.id}

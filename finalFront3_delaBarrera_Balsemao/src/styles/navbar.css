@@ -1,0 +1,25 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+}
+
+.navbar h4 {
+  color: black;
+  background-color: lightgoldenrodyellow;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+
+.navbar h4:hover {
+    color: black;
+    background-color: bisque;
+  }
+
+.navbar h3:hover{
+    background-color: bisque;
+    border-radius: 10px;
+    padding: 0.5rem;
+    cursor: pointer;
+}

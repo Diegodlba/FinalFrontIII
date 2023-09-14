@@ -5,7 +5,11 @@ import Footer from "../Components/Footer";
 
 const Layout = () => {
   return (
-    <div className="dark">
+    <div
+      style={{
+        backgroundColor: "#FFD1C7",
+      }}
+    >
       <Navbar />
       <Outlet />
       <Footer />

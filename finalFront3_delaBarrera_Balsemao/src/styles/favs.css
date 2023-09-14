@@ -1,0 +1,12 @@
+.favs h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.favs div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}

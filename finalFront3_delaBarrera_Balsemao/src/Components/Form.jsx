@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import "../styles/form.css";
 
 const initialState = {
   name: "",
@@ -40,33 +41,31 @@ const Form = () => {
   };
 
   return (
-    <div className="form">
-      <form onSubmit={onSubmit} id="Formulario">
-        <input
-          type="text"
-          name="name"
-          id={name}
-          placeholder="Nombre Completo"
-          onChange={onChange}
-        />
-        <input
-          type="email"
-          name="email"
-          id={email}
-          placeholder="Email"
-          onChange={onChange}
-        />
-        <button type="submit">Enviar</button>
-      </form>
+    <form onSubmit={onSubmit} id="Formulario" className="form">
+      <input
+        type="text"
+        name="name"
+        id={name}
+        placeholder="Nombre Completo"
+        onChange={onChange}
+      />
+      <input
+        type="email"
+        name="email"
+        id={email}
+        placeholder="Email"
+        onChange={onChange}
+      />
+      <button type="submit">Enviar</button>
       {validation ? (
         <div>
           Gracias {name}, te contactaremos al email {email}
         </div>
       ) : undefined}
       {validation === false ? (
-        <div>Por favor verifique los datos</div>
+        <small style={{color: "red"}}>Por favor verifique los datos</small>
       ) : undefined}
-    </div>
+    </form>
   );
 };
 
