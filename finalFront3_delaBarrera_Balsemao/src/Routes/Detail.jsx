@@ -3,7 +3,7 @@ import React from "react";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { usecontextGlobal } from "../Components/utils/GlobalContext";
-import "../styles/detail.css"
+import "../styles/detail.css";
 
 const Detail = () => {
   const { dentistState, dentistDispatch } = usecontextGlobal();
@@ -24,22 +24,24 @@ const Detail = () => {
   return (
     <div className="detail">
       <table>
-        <tr>
-          <td>Nombre</td>
-          <td>Email</td>
-          <td>Sitio web</td>
-        </tr>
-        <tr>
-          <td>
-            <h3>{dentistState.dentist.name}</h3>
-          </td>
-          <td>
-            <h3>{dentistState.dentist.email}</h3>
-          </td>
-          <td>
-            <h3>{dentistState.dentist.website}</h3>
-          </td>
-        </tr>
+        <tbody>
+          <tr>
+            <td>Nombre</td>
+            <td>Email</td>
+            <td>Sitio web</td>
+          </tr>
+          <tr>
+            <td>
+              <h3>{dentistState.dentist.name}</h3>
+            </td>
+            <td>
+              <h3>{dentistState.dentist.email}</h3>
+            </td>
+            <td>
+              <h3>{dentistState.dentist.website}</h3>
+            </td>
+          </tr>
+        </tbody>
       </table>
     </div>
   );
